@@ -5,3 +5,14 @@
 body {
   background: #eef8ff;
 }
+footer {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  bottom: 0;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
