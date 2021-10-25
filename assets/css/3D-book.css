@@ -32,7 +32,7 @@ section {
   height: 100%;
   content: "";
   transform-origin: left;
-  background: url("/assets/img/side.jpg");
+  background: url("https://farihatulmaria.github.io/tricks/assets/img/side.jpg");
   background-position: center;
   transform: rotateY(90deg);
 }
@@ -42,7 +42,7 @@ section {
   height: 100%;
   content: "";
   transform-origin: center;
-  background: url("/assets/img/back.jpg");
+  background: url("https://farihatulmaria.github.io/tricks/assets/img/back.jpg");
   background-position: center;
   transform: rotateY(180deg) translateZ(60px);
 }
