@@ -2,14 +2,21 @@
   --black: #000;
   --white: #fff;
 }
+.dark {
+  --black: #fff;
+  --white: #000;
+}
+
 a {
   text-decoration: none;
 }
 header {
   padding: 10px;
+  position: relative;
+  z-index: 99;
 }
 .logo {
-  color: #000;
+  color: var(--black);
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -41,8 +48,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: end;
-  font-size: 13px;
-  color: #888;
+  font-size: 17px;
+  color: var(--black);
 }
 .btns.active svg:nth-child(2) {
   display: block;
@@ -50,10 +57,13 @@ header {
 .btns.active svg:nth-child(1) {
   display: none;
 }
+.btn-list,
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
-ul li {
+.btn-list li {
   display: inline-block;
 }
 .main {
@@ -69,7 +79,82 @@ ul li {
   top: -66px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 111vh;
   object-fit: cover;
   z-index: -1;
+}
+.dark img {
+  filter: invert(1);
+  mix-blend-mode: multiply;
+}
+img {
+  position: absolute;
+  width: 100%;
+  top: -66px;
+  left: 0;
+  height: 111vh;
+  z-index: -1;
+  user-select: none;
+  mix-blend-mode: screen;
+}
+.main h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14rem;
+  text-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  margin-top: -84px;
+  margin-left: -86px;
+}
+.copy-right {
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  z-index: 99;
+  color: var(--black);
+}
+.social-icons {
+  position: absolute;
+  bottom: 63px;
+  right: 30px;
+}
+.social-icons a {
+  color: var(--black);
+}
+/* offset-menu */
+.offset-meun {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh !important;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.offset-meun.active {
+  left: 0;
+}
+.offset-meun ul {
+}
+.offset-meun ul li {
+  text-align: center;
+  margin: 9px 0;
+  padding: 8px 10px;
+  transition: 0.5s;
+}
+.offset-meun ul li a {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  color: var(--black);
+}
+.offset-meun ul li:hover {
+  background: var(--black);
+}
+.offset-meun ul li:hover a {
+  color: var(--white);
 }
