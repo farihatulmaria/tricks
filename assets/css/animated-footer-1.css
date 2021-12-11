@@ -8,6 +8,9 @@ body {
 footer a {
   color: #fff;
 }
+.container {
+  max-width: 93%;
+}
 footer {
   position: absolute;
   width: 100%;
