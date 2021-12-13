@@ -26,8 +26,7 @@ header {
 .meun-toggle {
   padding: 8px 6px;
 }
-.modes {
-}
+
 .modes svg,
 .meun-toggle svg {
   margin: 0 4px;
@@ -36,14 +35,7 @@ header {
 .btns svg:nth-child(2) {
   display: none;
 }
-.modes {
-}
-.modes svg {
-}
-.meun-toggle {
-}
-.meun-toggle svg {
-}
+
 .btns {
   display: flex;
   align-items: center;
@@ -136,8 +128,6 @@ img {
 }
 .offset-meun.active {
   left: 0;
-}
-.offset-meun ul {
 }
 .offset-meun ul li {
   text-align: center;

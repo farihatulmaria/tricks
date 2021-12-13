@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/tool-menu.css" />
+    <link
+      rel="stylesheet"
+      href="assets/third-party/bootstrap-5.0.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/third-party/fontawesome-free-5.15.3/css/all.css"
+    />
+    <title>tool-menu</title>
+  </head>
+  <body>
+    <div class="navgation">
+      <ul>
+        <li class="list active">
+          <a href="#">
+            <span class="icon"><i class="fas fa-home"></i></span>
+            <span class="text">home</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"><i class="fas fa-user"></i></span>
+            <span class="text">profile</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"><i class="fas fa-comment"></i></span>
+            <span class="text">messages</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"><i class="fas fa-camera"></i></span>
+            <span class="text">photos</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#">
+            <span class="icon"><i class="fas fa-cog"></i></span>
+            <span class="text">settings</span>
+          </a>
+        </li>
+        <div class="indicator"></div>
+      </ul>
+    </div>
+    <script>
+      const list = document.querySelectorAll(".list");
+      function activeLink() {
+        list.forEach((item) => item.classList.remove("active"));
+        this.classList.add("active");
+      }
+      list.forEach((item) => item.addEventListener("click", activeLink));
+    </script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/third-party/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <script src="assets/third-party/fontawesome-free-5.15.3/js/all.js"></script>
+  </body>
+</html>
